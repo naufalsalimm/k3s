@@ -7,10 +7,10 @@
 `cp -r /var/lib/rancher/k3s/storage/pvc-* /backup/`
 
 # ---> Uninstall
-`sudo /usr/local/bin/k3s-uninstall.sh
+`sudo /usr/local/bin/k3s-uninstall.sh`
 sudo rm -rf /etc/rancher /var/lib/rancher /etc/systemd/system/k3s*
 sudo systemctl daemon-reexec
-sudo systemctl daemon-reload`
+sudo systemctl daemon-reload
 
 # ---Install
 curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="--cluster-init --disable traefik" sh -
@@ -29,3 +29,7 @@ systemctl start k3s
 
 # ---> Debug
 sudo journalctl -u k3s -b -f
+
+<code>```bash
+echo hello
+```</code>
