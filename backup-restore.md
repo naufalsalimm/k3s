@@ -4,7 +4,7 @@
 cat /var/lib/rancher/k3s/server/token
 K10a756afaa65c99227811fa31378560a77349c1898ee0cc74b1d64cae38a12e88b::server:4b9fd00082e9a9d3b5706c56ebde1137
 
-cp -r /var/lib/rancher/k3s/storage/pvc-* /backup/
+`cp -r /var/lib/rancher/k3s/storage/pvc-* /backup/`
 
 # ---> Debug
 sudo journalctl -u k3s -b -f
